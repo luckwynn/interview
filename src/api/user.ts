@@ -1,4 +1,4 @@
-import request from '@/axios/index';
+import request from '@/api/index';
 
 export const getCaptchaId = () => {
   return request({

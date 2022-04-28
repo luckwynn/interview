@@ -1,6 +1,6 @@
 import './App.css';
 import { Button, Input } from 'antd';
-import { getCaptchaId, getCaptcha } from '@/axios/user';
+import { getCaptchaId, getCaptcha } from '@/api/user';
 import { useState } from 'react';
 
 const Demo = () => {
