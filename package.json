@@ -1,0 +1,47 @@
+{
+  "name": "interview",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "eslint": "eslint --init",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "antd": "^4.19.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "animate.css": "^4.1.1",
+    "axios": "^0.26.1",
+    "dva": "2.6.0-beta.22",
+    "eslint": "^8.13.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5"
+  }
+}
