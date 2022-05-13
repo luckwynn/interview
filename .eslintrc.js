@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   env: {
-    browser: true,
+    // browser: true,
     es6: true,
     mocha: true,
     jest: true,
@@ -11,7 +11,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: false,
     },
     ecmaVersion: 12,
     sourceType: "module",
@@ -35,5 +35,6 @@ module.exports = {
     "key-spacing": ["error", { afterColon: true }], // 要求在对象字面量的冒号和值之间存在至少有一个空格
     "lines-around-comment": ["error", { beforeBlockComment: true }], // 要求在块级注释之前有一空行
     "prefer-destructuring": ["error", { object: true, array: true }], //优先使用数组和对象解构
+    "@typescript-eslint/no-var-requires": 0
   },
 };
