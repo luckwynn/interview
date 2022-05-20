@@ -1,4 +1,4 @@
-import App from './App';
+import App from './routes/route';
 import 'antd/dist/antd.css';
 import { createBrowserHistory } from 'history';
 import dva from 'dva';
