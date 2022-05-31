@@ -5,7 +5,7 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  root: resolve(__dirname, 'src'),
+  // root: resolve(__dirname, ''),
   server: {
     host: '127.0.0.1',
     port: 8888,
@@ -29,4 +29,8 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
+  publicDir: false,
+  build: {
+    outDir: './dist'
+  }
 });
