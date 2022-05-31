@@ -29,7 +29,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-  publicDir: false,
+  // publicDir: false,
   build: {
     outDir: './dist'
   }
