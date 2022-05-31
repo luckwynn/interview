@@ -66,7 +66,7 @@ export default () => {
                   }}
                 />
               ) : (
-                <span>正在获取验证码</span>
+                <span>获取验证码</span>
               )
             }
           />
